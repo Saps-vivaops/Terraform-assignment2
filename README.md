@@ -1,11 +1,11 @@
-Explanation:
-Provider Configuration: Specifies AWS as the provider and sets the region.
-Local Variables: A map env_config holds configurations for each environment.
-Workspace Detection: Uses terraform.workspace to determine the current workspace.
-Resource Definitions: S3 bucket and EC2 instance are created with names and types based on the current workspace.
-Outputs: Outputs the bucket name and instance ID for reference.
+### Explanation:
+* Provider Configuration: Specifies AWS as the provider and sets the region.
+* Local Variables: A map env_config holds configurations for each environment.
+* Workspace Detection: Uses terraform.workspace to determine the current workspace.
+* Resource Definitions: S3 bucket and EC2 instance are created with names and types based on the current workspace.
+* Outputs: Outputs the bucket name and instance ID for reference.
 
-Usage:
+### Usage:
 1. Initialize Terraform: terraform init
 2. Create a workspace for each environment:
 terraform workspace new dev
